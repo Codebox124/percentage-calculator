@@ -1,50 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Percentage Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1 class="">
-        Percentage Calculator
+        Percentage Calculator .
     </h1>
       
       <form id="f1">
         <fieldset class="values">
-          What is <input type="text" size="3" autofocus="autofocus"> %
-          of <input type="text" size="7">?
+          What is <input type="text" aria-label="input" size="3" autofocus="autofocus"> %
+          <span>of <input type="text" aria-label="output" size="7">?</span>
         </fieldset>
         <fieldset class="results">
-          <input type="submit" value="Calculate">
-          <input type="text" size="6" readonly="readonly"><span class="hide"> %</span>
+          <input type="submit" aria-label="calculate" value="Calculate">
+          <input type="text" aria-label="output" size="6" readonly="readonly"><span class="hide"> %</span>
         </fieldset>
       </form>
       <form id="f2">
         <fieldset class="values">
-          <input type="text" size="5"> is what percent
-          of <input type="text" size="5">?
+          <input type="text" aria-label="input" size="5"> is what percent
+          <span>of <input aria-label="output" type="text" size="5">?</span>
         </fieldset>
         <fieldset class="results">
-          <input type="submit" value="Calculate">
-          <input type="text" size="6" readonly="readonly"><span> %</span>
+          <input type="submit" aria-label="calculate" value="Calculate">
+          <input type="text" aria-label="output" size="6" readonly="readonly"><span> %</span>
         </fieldset>
       </form>
       <form id="f3">
         <fieldset class="values">
           What is the percentage increase/decrease<br>
-          from <input type="text" size="5">
-          to <input type="text" size="5">?
+          <span>from <input aria-label="input" type="text" size="5"></span>
+          <span>to <input type="text" aria-label="input" size="5">?</span>
         </fieldset>
         <fieldset class="results"><br class="remove">
-          <input type="submit" value="Calculate">
-          <input type="text" size="6" readonly="readonly"><span> %</span>
+          <input type="submit" aria-label="calculate" value="Calculate">
+          <input type="text" aria-label="input" size="6" readonly="readonly"><span> %</span>
         </fieldset>
       </form>
 
-<script src="main.js"></script>
+<script src="./main.js">
+</script>
 </body>
+
+
+
+
 
 </html>
